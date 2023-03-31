@@ -13,37 +13,21 @@
 <!-- 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-  <title></title>
+  <title>container / container-fluid</title>
   <style>
     div{
-      border: solid 1px black;
+      border: solid 1px red;
     }
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-8">col-xs-8</div>
-    <div class="col-xs-4">col-xs-4</div>
-  </div>
-</div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">col-sm-8</div>
-      <div class="col-sm-4">col-sm-4</div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">col-md-8</div>
-    <div class="col-md-4">col-md-4</div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8">col-lg-8</div>
-    <div class="col-lg-4">col-lg-4</div>
+    <div class="col-sm-8 col-md-6 col-lg-2">col-sm-8</div> 
+    <!-- 값을 안에 여러개 넣을 수 있음. sm 크기에서는 8:4로 있다가 md크기가 되면 6:6으로 바뀌게 된다.-->
+    <!-- lg크기에서는 2:8비율로 변하게 된다. -->
+    <div class="col-sm-4 col-md-6 col-lg-10">col-sm-4</div>
   </div>
 </div>
 </body>
