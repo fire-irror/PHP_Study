@@ -69,3 +69,10 @@ foreach($ar as $item){
 }
 
 ?>
+
+<?php
+$txt = "You should eat fruits, should not buy";
+$result = str_replace("should","could",$txt);
+echo "변경전 문자열 : ".$txt;
+echo "변경후 문자열 : ".$result;
+?>
