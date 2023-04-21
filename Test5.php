@@ -57,7 +57,15 @@ $arr = array("pizza1","pizza2","pizza3","pizza4","pizza5");
 
 $str = implode(",",$arr);
 echo "implode :".$str;
+echo "<br>"
+?>
 
+<?php
+$str = "apple/mango/strawberry/melon";
+$ar = explode("/",$str);
 
+foreach($ar as $item){
+  echo $item."<br/>";
+}
 
 ?>
