@@ -49,5 +49,15 @@ echo "<br>";
 
 $result2=substr($str,3);
 echo $result2;
+echo "<br>"
+
+?>
+<?php
+$arr = array("pizza1","pizza2","pizza3","pizza4","pizza5");
+
+$str = implode(",",$arr);
+echo "implode :".$str;
+
+
 
 ?>
