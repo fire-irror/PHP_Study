@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.msin.css">
+
+<!-- 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <title>반응형 웹페이지 레이아웃 만들기</title>
+  <style>
+    div{
+      text-align: center;
+      box-sizing:border-box ;
+      border-radius: 3px;
+    }   
+.head{
+  color:gray;
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .food {
+    height: 320px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .head {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width:992px){
+  .food {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+.foot{
+  margin-top: 65px;
+  font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 bg-info head"><h1>GOOD SOUP RESTAURANT</h1></div>
+    </div>
+
+      <div class="row">
+        <div class="text-primary col-lg-2 col-md-6 bg-danger food">파스타<br>피자<br>샐러드<br>음료</div>
+        <div class="col-lg-8 col-md-6 bg-warning">Lorem 2                                                        eee dolor sit amet consectetur adipisicing elit. Velit, voluptatum tempore officiis fugiat eos reprehenderit quo sit autem veniam perferendis. Non possimus, dolore doloribus nulla et at quis animi tenetur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatum tempore officiis fugiat eos reprehenderit quo sit autem veniam perferendis. Non possimus, dolore doloribus nulla et at quis animi tenetur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatum tempore officiis fugiat eos reprehenderit quo sit autem veniam perferendis. Non possimus, dolore doloribus nulla et at quis animi tenetur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatum tempore officiis fugiat eos reprehenderit quo sit autem veniam perferendis. Non possimus, dolore doloribus nulla et at quis animi tenetur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatum tempore officiis fugiat eos reprehenderit quo sit autem veniam perferendis. Non possimus, dolore doloribus nulla et at quis animi tenetur.
+        </div>
+        <div class="col-lg-2 col-md-12 bg-primary">메인쉐프 멤버<br>김주영<br>한슬기<br>김주한<br>이한별 </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 foot">good soup 레스토랑을 이용해 주셔서 감사합니다.</div>
+      </div>
+
+        
+      </div>
+  </div>
+</div>
+</body>
+</html>
