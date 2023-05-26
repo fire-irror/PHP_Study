@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>emmet</title>
+  <style>
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    div{
+      border: 1px solid gray;
+    }
+
+    #wrapper{
+      border: 1px solid gray;
+      width: 80%;
+      margin: 0 auto;
+      background-color:lightgreen;
+    }
+
+    nav li {
+      list-style: none;
+      float: left;
+      border: 1px solid red;
+      box-sizing: border-box;   /*모든 사이즈를 맞춰 한 화면에 나오게 나타내줌*/
+      width: 20%;
+      text-align: center;
+    }
+    
+    nav {
+      overflow: hidden;   /*글자가 박스를 넘쳐날때 글씨가 안보이기 함 박스 크기에 맞춰 글자가 맞춰짐 공식!*/
+    }
+
+    header h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content {
+      padding: 10px;
+    }
+
+    h2{
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border: 1px solid red;
+
+    /*  height: 100px;
+      line-height: 100px; 공간을 띄어주고 아래위 간격을 맞춰주어 글자가 가운데로 가게 해줌*/
+    }
+    /*해상도가 767보다 작아지면 화면 색깔이 빨간색으로 보이게 한다 ==> 반응형*/
+    @media (max-width:767px) {
+      body {
+        background-color: aqua;
+      }
+    }
+
+    @media (min-width:768px){
+      body{
+        background-color: green;
+      }
+    }
+
+    @media (min-width:992px) {
+      body {
+        background-color: black;
+      }
+    }
+
+    @media (min-width:1200px){
+      body{
+        background-color: darkmagenta;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>반응형 웹</h1>
+
+      <nav>
+        <ul>
+          <li>menu1</li>
+          <li>menu2</li>
+          <li>menu3</li>
+          <li>menu4</li>
+          <li>menu5</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <h2>미디어쿼리를 사용한 반응형 웹</h2> <br>
+      <p>
+        # The files in this package are extracted from IPython to aid the main loop integration<br>
+        # See tests_mainloop for some manually runable tests<br>
+    </div>
+  <footer>
+    <h1>Footer</h1>
+  </footer>
+    </div>
+  
+</body>
+</html>
