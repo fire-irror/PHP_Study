@@ -1,5 +1,4 @@
-# PHP_Study
-
+# php study
 
 <meta> 문서에 대한 정보를 알려주는 태그
 
@@ -325,3 +324,35 @@ where empno=7782;
 
 delete from emp
 where empno=7792 and sal>3000;
+
+
+<<alter: 테이블 구조 변경
+1. 테이블 이름 변경 rename
+emp->emp1
+형식 : alter table 테이블 이름 rename 바뀔 테이블명;
+
+2.필드 추가 add
+형식 : alter table 테이블 이름 add 추가 필드이름 타입;
+
+3. 필드타입 변경 modify
+형식 : alter table 테이블 이름 modify 변경할 필드이름 새로운 타입;
+
+4. 필드이름 변경 change
+형식 : alter table 테이블 이름 change 기존 필드이름 새로운 필드이름 새로운 필드타입;
+
+5.필드삭제 drop
+형식 : alter table 테이블 이름 drop 필드명;
+
+alter table emp drop addr;
+
+6. 테이블 삭제  drop
+drop table 테이블명;
+
+delete : 내용
+
+drop: 테이블 자체 삭제
+
+
+
+
+
